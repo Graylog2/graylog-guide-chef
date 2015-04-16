@@ -1,5 +1,6 @@
 require 'time'
 require 'chef/log'
+require 'chef/version'
 require 'chef/event_dispatch/base'
 require 'chef/handler/graylog/gelf_message'
 
@@ -70,6 +71,7 @@ class Chef
 
         def new_message(node, event_name)
           Graylog::GelfMessage.new(node, 'chef').tap do |message|
+            message.add_field('version', Chef::VERSION)
             message.add_field('run_id', run_id)
             message.add_field('event_name', event_name)
             message.add_field('node_name', node.name)
