@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Chef handler for Graylog GELF}
   spec.description   = %q{Chef handler to send GELF events to Graylog}
-  spec.homepage      = 'https://www.graylog.org/'
+  spec.homepage      = 'https://github.com/Graylog2/chef-handler-graylog'
   spec.license       = 'ASL2'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
