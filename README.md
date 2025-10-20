@@ -1,3 +1,6 @@
+# This guide has been archived.
+The information in this guide is very old and likely no longer applicable to current versions of Graylog. Please take that into account when reading the following content.
+
 # Chef::Handler::Graylog
 
 This gem provides a `Chef::Handler` that subscribes to various Chef runtime
